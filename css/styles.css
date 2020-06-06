@@ -29,6 +29,10 @@ body {
   text-align: center;
 }
 
+#navbar .logo img {
+  cursor: pointer;
+}
+
 #navbar .flex {
   display: -webkit-box;
   display: -ms-flexbox;

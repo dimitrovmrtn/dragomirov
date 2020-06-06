@@ -25,6 +25,9 @@ body {
   }
   .logo {
     text-align: center;
+    img {
+      cursor: pointer;
+    }
   }
   .flex {
     display: flex;
