@@ -493,7 +493,8 @@ h1.title {
     font-size: 20px;
     padding: 0;
   }
-  #contact iframe {
+  #contact iframe,
+  #contact #lol {
     width: 80vw;
     margin-bottom: 40px;
   }
@@ -502,6 +503,10 @@ h1.title {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #contact .contact-content input,
+  #contact .contact-content textarea {
+    width: 80vw;
   }
 }
 

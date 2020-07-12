@@ -426,11 +426,16 @@ h1.title {
     }
   }
   #contact {
-    iframe {
+    iframe,
+    #lol {
       width: 80vw;
       margin-bottom: 40px;
     }
     .contact-content {
+      input,
+      textarea {
+        width: 80vw;
+      }
       flex-direction: column;
     }
   }
