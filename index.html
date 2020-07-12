@@ -31,10 +31,10 @@
           <div>
             <div>
               <ul>
-                <li><a href="#home">Начало</a></li>
-                <li><a href="#about">За нас</a></li>
-                <li><a href="#service">Услуги</a></li>
-                <li><a href="#contact">Контакти</a></li>
+                <li><a class="sideMenuItem" href="#home">Начало</a></li>
+                <li><a class="sideMenuItem" href="#about">За нас</a></li>
+                <li><a class="sideMenuItem" href="#service">Услуги</a></li>
+                <li><a class="sideMenuItem" href="#contact">Контакти</a></li>
               </ul>
             </div>
           </div>
@@ -179,5 +179,10 @@
   </body>
   <script>
     document.getElementById("form").onsubmit = () => window.alert("heeeeeey");
+    [...document.getElementsByClassName("sideMenuItem")].forEach((item) =>
+      item.addEventListener("click", () =>
+        document.querySelector(".toggler").click()
+      )
+    );
   </script>
 </html>
