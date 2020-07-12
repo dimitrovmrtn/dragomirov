@@ -520,6 +520,9 @@ h1.title {
 }
 
 @media (max-width: 420px) {
+  #navbar img {
+    width: 240px;
+  }
   #navbar a {
     font-size: 20px;
   }
