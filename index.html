@@ -30,6 +30,7 @@
       </div>
     </div>
     <div id="home">
+      <h4>Свържете се с нас денонощно:</h4>
       <div>
         <a class="phone" href="tel:0035952658521">
           <i class="fas fa-phone"></i>
@@ -42,6 +43,8 @@
           0889 549 857
         </a>
       </div>
+      <br />
+      <h4>или ни пишете:</h4>
       <div id="social">
         <a
           target="_blank"
@@ -62,21 +65,83 @@
       </div>
     </div>
     <div id="about">
-      <h1>За нас</h1>
+      <h1 class="title">За нас</h1>
       <div class="info">
         <img src="./images/about.jpg" alt="" />
         <p>
           Ние, Диляна и Драгомир Драгомирови, като управляващи семейната траурна
           агенция ”Драгомиров” Ви предлагаме своя дългогодишен опит в цялостното
-          организиране на погребения, кремации и панихиди.Разбираме добре
-          болката, която причинява загубата на близък човек и отговорността,
-          която носи нашата професия, затова високо ценим професионализма и
-          човечността на нашите служители.
+          организиране на погребения, кремации и панихиди.
         </p>
       </div>
       <div class="see-more">
         <a href="about.html" id="see-more">Виж още</a>
       </div>
     </div>
+    <div id="service">
+      <h1 class="title">Услуги</h1>
+      <p style="color: white;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+        repudiandae modi, dolorum omnis accusantium aspernatur accusamus fuga
+        quod voluptates nisi maiores totam, illum quos nesciunt hic quisquam
+        nobis minus quae. Necessitatibus commodi tenetur, totam voluptates amet
+        ipsa repellat error nemo cupiditate similique voluptatum maxime illum
+        est temporibus velit ducimus? Voluptas ducimus quas impedit quos dolores
+        fuga rerum quia, dicta nostrum, excepturi quasi tenetur nulla officia at
+        eaque doloremque earum porro a officiis iure ipsum dolorem? Totam,
+        dolore quibusdam modi perspiciatis molestias dignissimos consequuntur
+        beatae! Iste quis optio non obcaecati nulla? Ipsum quibusdam perferendis
+        ex ratione voluptatibus velit possimus fugiat illum.
+      </p>
+    </div>
+    <div id="contact">
+      <h1 class="title">Контакти</h1>
+      <div class="contact-content">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.003826319744!2d27.90265791548339!3d43.209409079139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4547618f01483%3A0x9e00b98b679aab09!2sFuneral%20DRAGOMIROV!5e0!3m2!1sen!2sbg!4v1592148570571!5m2!1sen!2sbg"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+        <div>
+          <form
+            id="form"
+            action="https://formspree.io/dimitrovmrtn@gmail.com"
+            method="POST"
+          >
+            <label for="name">Име:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Въведете своето име..."
+              required
+            />
+            <label for="email">Имейл:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Въведете своя имейл..."
+              required
+            />
+            <label for="subject">Съобщение:</label>
+            <textarea
+              name="subject"
+              id="subject"
+              cols="10"
+              rows="10"
+              placeholder="Свържете се с нас..."
+            ></textarea>
+            <input type="submit" value="Изпрати" />
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
+  <script>
+    document.getElementById("form").onsubmit = () => window.alert("heeeeeey");
+  </script>
 </html>
