@@ -314,7 +314,6 @@ h1.title {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  background: #111;
 }
 
 .hamburger > div {
