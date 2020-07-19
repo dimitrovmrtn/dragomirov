@@ -18,6 +18,10 @@ body {
   width: 40vw;
 }
 
+.address {
+  color: white !important;
+}
+
 iframe {
   width: 40vw;
   height: 40vh;
@@ -236,12 +240,6 @@ h1.title {
 
 #contact .contact-content #addresses {
   margin-top: 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   color: white;
 }
 
@@ -251,6 +249,28 @@ h1.title {
 
 #contact .contact-content form {
   text-align: center;
+}
+
+#contact .contact-content .phones {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact .contact-content .phones a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contact .contact-content .phones a:hover {
+  -webkit-transform: scale(1.24);
+          transform: scale(1.24);
 }
 
 #contact .contact-content input,
@@ -276,6 +296,53 @@ h1.title {
 #contact .contact-content input[type="submit"]:hover {
   background: white;
   color: black;
+}
+
+footer {
+  height: 50px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer i {
+  color: white;
+  font-size: 2rem;
+  -webkit-transition: 0.4s color;
+  transition: 0.4s color;
+}
+
+footer i.fa-whatsapp:hover {
+  color: #25d366;
+}
+
+footer i.fa-facebook-messenger:hover {
+  color: #006aff;
+}
+
+footer i.fa-facebook:hover {
+  color: #3b5998;
+}
+
+footer i.fa-google:hover {
+  color: #3cba54;
+}
+
+#post-footer {
+  margin: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+#post-footer a {
+  color: white;
 }
 
 .menu-wrap {

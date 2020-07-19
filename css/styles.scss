@@ -13,6 +13,9 @@ body {
 #lol {
   width: 40vw;
 }
+.address {
+  color: white !important;
+}
 iframe {
   width: 40vw;
   height: 40vh;
@@ -191,8 +194,8 @@ h1.title {
     align-items: center;
     #addresses {
       margin-top: 0 20px;
-      display: flex;
-      justify-content: space-between;
+      // display: flex;
+      // justify-content: space-between;
       color: white;
     }
     label {
@@ -200,6 +203,19 @@ h1.title {
     }
     form {
       text-align: center;
+    }
+    .phones {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      a {
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.24);
+        }
+      }
     }
     input,
     textarea {
@@ -222,6 +238,41 @@ h1.title {
         color: black;
       }
     }
+  }
+}
+
+footer {
+  // background-color: blue;
+  height: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  i {
+    color: white;
+    font-size: 2rem;
+    transition: 0.4s color;
+    &.fa-whatsapp:hover {
+      color: #25d366;
+    }
+    &.fa-facebook-messenger:hover {
+      color: #006aff;
+    }
+    &.fa-facebook:hover {
+      color: #3b5998;
+    }
+    &.fa-google:hover {
+      color: #3cba54;
+    }
+  }
+}
+
+#post-footer {
+  margin: 20px 0;
+  color: white;
+  text-align: center;
+  a {
+    color: white;
   }
 }
 
@@ -405,8 +456,8 @@ h1.title {
       display: none;
     }
   }
-  // #home {
-  // }
+  #home {
+  }
   #about {
     h1 {
       font-size: 40px;
