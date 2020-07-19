@@ -244,8 +244,8 @@ h1.title {
 
 #service .cards .card {
   /* Add shadows to create the "card" effect */
-  -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
-          box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 4px 4px 8px 0 rgba(255, 255, 255, 0.3);
+          box-shadow: 4px 4px 8px 0 rgba(255, 255, 255, 0.3);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 20vw;
