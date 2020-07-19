@@ -67,6 +67,11 @@ h1.title {
     &:hover {
       transform: scale(1.24);
     }
+    &#dropdown:hover {
+      .dropdown-content {
+        display: block;
+      }
+    }
     // padding: 20px;
     font-size: 30px;
   }
@@ -77,9 +82,17 @@ h1.title {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
+    right: 33vw;
+    top: 14vh;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    a {
+      font-size: 14px;
+      &:hover {
+        transform: none;
+      }
+    }
   }
   .dropdown-content a {
     color: black;
@@ -88,11 +101,7 @@ h1.title {
     display: block;
   }
   .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
+    background-color: rgb(187, 187, 187);
   }
 
   .dropdown:hover .dropbtn {
