@@ -43,9 +43,18 @@
 
       <div class="flex">
         <a href="#home">Начало</a>
-        <a href="#about">За нас</a>
-        <a href="#service">Услуги</a>
+        <a href="about.html">За нас</a>
+        <a href="#service" id='dropdown'>Услуги</a>
         <a href="#contact">Контакти</a>
+      </div>
+      <div class="dropdown-content">
+        <a href="#">Погребение</a>
+        <a href="#">Паметници</a>
+        <a href="#">Кремация</a>
+        <a href="#">Панихида</a>
+        <a href="#">Хладилна камера</a>
+        <a href="#">Транспорт</a>
+        <a href="#">Траурни стоки</a>        
       </div>
     </div>
     <div id="home">
@@ -79,7 +88,7 @@
           id="facebook"
         >
           <i class="fab fa-facebook-messenger" aria-hidden="true"></i>
-          Facebook
+          Messenger
         </a>
       </div>
     </div>
@@ -101,32 +110,43 @@
       <h1 class="title">Услуги</h1>
       <div class="cards">
         <div class="card">
-          <img src="img_avatar.png" alt="Avatar">
           <div class="container">
             <h4><b>Погребение</b></h4>
-            <p>Виж още</p>
           </div>
+          <img src="./images/pogrebenie.jpg" alt="Avatar">
         </div>
         <div class="card">
-          <img src="img_avatar.png" alt="Avatar">
+          <div class="container">
+            <h4><b>Паметници</b></h4>
+          </div>
+          <img src="./images/pametnik.jpg" alt="Avatar">
+        </div>
+        <div class="card">
           <div class="container">
             <h4><b>Кремация</b></h4>
-            <p>Виж още</p>
           </div>
-        </div>
-        <div class="card">
-          <img src="img_avatar.png" alt="Avatar">
-          <div class="container">
-            <h4><b>Панихида</b></h4>
-            <p>Виж още</p>
-          </div>
+          <img src="./images/cremaciq.jpg" alt="Avatar">
         </div>
       </div>
+          <div class="see-more">
+            <a href="about.html" class="see-more">Виж всички</a>
+          </div>
     </div>
     <div id="contact">
       <h1 class="title">Контакти</h1>
       <div class="contact-content">
         <div id="lol">
+          <div class="phones">
+            <a href="tel:0035952658521"> 
+          <i class="fas fa-phone"></i>
+              052 65 8521</a>
+            <a href="tel:00359889549857">
+          <i class="fas fa-phone"></i>
+              0889 54 98 57</a>
+            <a href="tel:00359888816240">
+          <i class="fas fa-phone"></i>
+              0888 81 62 40</a>
+          </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.003826319744!2d27.90265791548339!3d43.209409079139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4547618f01483%3A0x9e00b98b679aab09!2sFuneral%20DRAGOMIROV!5e0!3m2!1sen!2sbg!4v1592148570571!5m2!1sen!2sbg"
             frameborder="0"
@@ -177,11 +197,7 @@
               value="odji74@yahoo.com,xanderdragomirov@yahoo.com"
             />
           </form>
-          <div class="phones">
-            <a href="tel:0035952658521">052 65 8521</a>
-            <a href="tel:00359889549857">0889 54 98 57</a>
-            <a href="tel:00359888816240">0888 81 62 40</a>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -216,3 +232,5 @@
     );
   </script>
 </html>
+
+
