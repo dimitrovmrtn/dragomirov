@@ -191,12 +191,12 @@ h1.title {
     justify-content: space-evenly;
     .card {
       /* Add shadows to create the "card" effect */
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
       transition: 0.3s;
       width: 20vw;
       background-color: white;
       border-radius: 5px;
-
+      cursor: pointer;
       img {
         width: 20vw;
         border-radius: 5px;
@@ -512,10 +512,12 @@ footer {
     .cards {
       flex-direction: column;
       align-items: center;
+      .card {
+        margin-bottom: 30px;
+      }
       .card,
       .card img {
-        margin-bottom: 20px;
-        width: 50vw;
+        width: 45vw;
       }
     }
   }

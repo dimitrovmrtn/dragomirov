@@ -244,13 +244,14 @@ h1.title {
 
 #service .cards .card {
   /* Add shadows to create the "card" effect */
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
+          box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 20vw;
   background-color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 #service .cards .card img {
@@ -608,10 +609,12 @@ footer i.fa-google:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  #service .cards .card {
+    margin-bottom: 30px;
+  }
   #service .cards .card,
   #service .cards .card img {
-    margin-bottom: 20px;
-    width: 50vw;
+    width: 45vw;
   }
   #contact iframe,
   #contact #lol {
