@@ -20,7 +20,7 @@
   <body>
     <div id="navbar">
       <div class="logo">
-        <a href="#home"><img src="./images/nobg.png" alt="" /></a>
+        <a class="menuItem" href="#home"><img src="./images/nobg.png" alt="" /></a>
       </div>
       <div class="menu-wrap">
         <input type="checkbox" class="toggler" />
@@ -31,10 +31,10 @@
           <div>
             <div>
               <ul>
-                <li><a class="sideMenuItem" href="#home">Начало</a></li>
-                <li><a class="sideMenuItem" href="#about">За нас</a></li>
-                <li><a class="sideMenuItem" href="#service">Услуги</a></li>
-                <li><a class="sideMenuItem" href="#contact">Контакти</a></li>
+                <li><a class="sideMenuItem menuItem" href="#home">Начало</a></li>
+                <li><a class="sideMenuItem menuItem" href="#about">За нас</a></li>
+                <li><a class="sideMenuItem menuItem" href="#service">Услуги</a></li>
+                <li><a class="sideMenuItem menuItem" href="#contact">Контакти</a></li>
               </ul>
             </div>
           </div>
@@ -42,17 +42,17 @@
       </div>
 
       <div class="flex">
-        <a href="#home">Начало</a>
-        <a href="about.html">За нас</a>
-        <a href="#service" id='dropdown'>Услуги
+        <a class='menuItem' href="#home">Начало</a>
+        <a class='menuItem' href="about.html">За нас</a>
+        <a class='menuItem' href="#service" id='dropdown'>Услуги
           <div class="dropdown-content">
-            <a href="#">Погребение</a>
-            <a href="#">Паметници</a>
-            <a href="#">Кремация</a>
-            <a href="#">Панихида</a>
-            <a href="#">Хладилна камера</a>
-            <a href="#">Транспорт</a>
-            <a href="#">Траурни стоки</a>        
+            <a class='menuItem' href="#">Погребение</a>
+            <a class='menuItem' href="#">Паметници</a>
+            <a class='menuItem' href="#">Кремация</a>
+            <a class='menuItem' href="#">Панихида</a>
+            <a class='menuItem' href="#">Хладилна камера</a>
+            <a class='menuItem' href="#">Транспорт</a>
+            <a class='menuItem' href="#">Траурни стоки</a>        
           </div>
         </a>
         <a href="#contact">Контакти</a>
@@ -225,6 +225,7 @@
       Всички права запазени. 2020 &#169 Изработка от <a href="">Мартин Димитров</a>
     </div>
   </body>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   <script>
     document.getElementById("form").onsubmit = () => window.alert("heeeeeey");
     [...document.getElementsByClassName("sideMenuItem")].forEach((item) =>
@@ -237,6 +238,29 @@
     document.querySelector(".dropdown-content").addEventListener('mouseover', () => document.querySelector(".dropdown-content").style.display = 'block')
     document.querySelector("#dropdown").addEventListener('mouseout', () => document.querySelector(".dropdown-content").style.display = 'none')
     document.querySelector(".dropdown-content").addEventListener('mouseout', () => document.querySelector(".dropdown-content").style.display = 'none')
+//     function SmoothVerticalScrolling(e, time, where) {
+//     let eTop = e.getBoundingClientRect().top;
+//     let eAmt = eTop / 100;
+//     let curTime = 0;
+//     while (curTime <= time) {
+//         window.setTimeout(SVS_B, curTime, eAmt, where);
+//         curTime += time / 100;
+//     }
+// }
+
+// function SVS_B(eAmt, where) {
+//     if(where == "center" || where == "")
+//         window.scrollBy(0, eAmt / 2);
+//     if (where == "top")
+//         window.scrollBy(0, eAmt);
+// }
+
+//     let menuItems = [...document.getElementsByClassName('menuItem')]
+//     menuItems.forEach(item => {
+//       item.addEventListener('click', () => SmoothVerticalScrolling(item, 275, 'center'))
+//     }
+//     )
+
   </script>
 </html>
 

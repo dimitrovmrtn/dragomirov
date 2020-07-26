@@ -6,6 +6,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -274,6 +278,7 @@ h1.title {
 
 #service {
   margin-bottom: 100px;
+  padding-top: 90px;
   /* On mouse-over, add a deeper shadow */
   /* Add some padding inside the card container */
 }
@@ -320,6 +325,10 @@ h1.title {
 
 #service .container {
   padding: 2px 16px;
+}
+
+#contact {
+  padding-top: 70px;
 }
 
 #contact .contact-content {
@@ -628,6 +637,12 @@ footer i.fa-google:hover {
 }
 
 @media (max-width: 799px) {
+  .see-more a {
+    padding: 20px;
+  }
+  .logo {
+    text-align: right !important;
+  }
   h1.title {
     font-size: 40px;
     margin: 20px 0;
@@ -640,7 +655,7 @@ footer i.fa-google:hover {
     display: none;
   }
   #home {
-    padding-top: 28vh;
+    padding-top: 22vh;
   }
   #home #facebook,
   #home #whatsapp {
@@ -717,7 +732,24 @@ footer i.fa-google:hover {
     font-size: 20px;
   }
   #home div a.phone {
-    font-size: 40px;
+    font-size: 30px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #whatsapp:hover {
+    background-color: green;
+    color: black;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  #contact .phones {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=styles.css.map */
