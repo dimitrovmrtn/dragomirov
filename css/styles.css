@@ -289,7 +289,7 @@ h1.title {
 
 #service {
   margin-bottom: 50px;
-  padding-top: 90px;
+  padding-top: 50px;
   /* On mouse-over, add a deeper shadow */
   /* Add some padding inside the card container */
 }
@@ -339,7 +339,7 @@ h1.title {
 }
 
 #contact {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 #contact .contact-content {
