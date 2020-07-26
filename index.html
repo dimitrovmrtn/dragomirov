@@ -33,7 +33,17 @@
               <ul>
                 <li><a class="sideMenuItem menuItem" href="#home">Начало</a></li>
                 <li><a class="sideMenuItem menuItem" href="#about">За нас</a></li>
-                <li><a class="sideMenuItem menuItem" href="#service">Услуги</a></li>
+                <li><a class="sideMenuItem menuItem" href="#service">Услуги</a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                  <div class="dropdown-content">
+                    <a class='menuItem' href="#">Погребение</a>
+                    <a class='menuItem' href="#">Паметници</a>
+                    <a class='menuItem' href="#">Кремация</a>
+                    <a class='menuItem' href="#">Панихида</a>
+                    <a class='menuItem' href="#">Хладилна камера</a>
+                    <a class='menuItem' href="#">Транспорт</a>
+                    <a class='menuItem' href="#">Траурни стоки</a>        
+                  </div>
+                </li>
                 <li><a class="sideMenuItem menuItem" href="#contact">Контакти</a></li>
               </ul>
             </div>
@@ -235,32 +245,12 @@
     );
     document.querySelector(".dropdown-content").firstChild.remove()
     document.querySelector("#dropdown").addEventListener('mouseover', () => document.querySelector(".dropdown-content").style.display = 'block')
+    document.querySelector(".fa-angle-down").addEventListener('click', () => document.querySelector(".dropdown-content").style.display = 'block')
     document.querySelector(".dropdown-content").addEventListener('mouseover', () => document.querySelector(".dropdown-content").style.display = 'block')
     document.querySelector("#dropdown").addEventListener('mouseout', () => document.querySelector(".dropdown-content").style.display = 'none')
     document.querySelector(".dropdown-content").addEventListener('mouseout', () => document.querySelector(".dropdown-content").style.display = 'none')
-//     function SmoothVerticalScrolling(e, time, where) {
-//     let eTop = e.getBoundingClientRect().top;
-//     let eAmt = eTop / 100;
-//     let curTime = 0;
-//     while (curTime <= time) {
-//         window.setTimeout(SVS_B, curTime, eAmt, where);
-//         curTime += time / 100;
-//     }
-// }
-
-// function SVS_B(eAmt, where) {
-//     if(where == "center" || where == "")
-//         window.scrollBy(0, eAmt / 2);
-//     if (where == "top")
-//         window.scrollBy(0, eAmt);
-// }
-
-//     let menuItems = [...document.getElementsByClassName('menuItem')]
-//     menuItems.forEach(item => {
-//       item.addEventListener('click', () => SmoothVerticalScrolling(item, 275, 'center'))
-//     }
-//     )
-
+    let links = [...document.getElementsByTagName('a')]
+    links.forEach(link => link.addEventListener('ontouchend', () => link.removeClass('hover')))
   </script>
 </html>
 
