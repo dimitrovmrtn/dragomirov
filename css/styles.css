@@ -14,6 +14,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html.hidden {
+  overflow: hidden;
+}
+
 body {
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -71,7 +75,6 @@ h1.title {
 
 .dropdown-content.mobileDropDown {
   display: block !important;
-  top: 55vh;
   right: 28vw;
 }
 

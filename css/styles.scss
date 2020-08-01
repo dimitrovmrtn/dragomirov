@@ -9,6 +9,9 @@
 }
 html {
   scroll-behavior: smooth;
+  &.hidden {
+    overflow: hidden;
+  }
 }
 body {
   background-color: rgba(0, 0, 0, 0.9);
@@ -46,7 +49,7 @@ h1.title {
 .dropdown-content {
   &.mobileDropDown {
     display: block !important;
-    top: 55vh;
+    // top: 55vh !important;
     right: 28vw;
   }
   display: none;
@@ -175,6 +178,7 @@ h1.title {
     transition: 0.5s;
     &:hover {
       font-size: 60px;
+      // transform: scale(1.2);
     }
   }
   #social {
@@ -575,6 +579,7 @@ footer {
 @media (max-width: 799px) {
   a.phone:hover {
     font-size: 40px !important;
+    // transform: scale(1.2);
   }
   .see-more a {
     padding: 20px;
@@ -657,6 +662,7 @@ footer {
   #home {
     div a.phone {
       font-size: 50px;
+      // transform: scale(1.2);
     }
   }
 }
@@ -671,6 +677,8 @@ footer {
   }
   #home {
     div a.phone {
+      // transform: scale(1.2);
+
       font-size: 30px;
     }
   }
