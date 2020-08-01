@@ -37,7 +37,7 @@
                 </li>
                 <li><a class="sideMenuItem menuItem" href="#contact">Контакти</a></li>
               </ul>
-                        <div class="dropdown-content">
+                        <!-- <div class="dropdown-content1">
                           <a class='menuItem' href="#">Погребение</a>
                           <a class='menuItem' href="#">Паметници</a>
                           <a class='menuItem' href="#">Кремация</a>
@@ -45,7 +45,7 @@
                           <a class='menuItem' href="#">Хладилна камера</a>
                           <a class='menuItem' href="#">Транспорт</a>
                           <a class='menuItem' href="#">Траурни стоки</a>        
-                        </div>
+                        </div> -->
             </div>
           </div>
         </div>
@@ -55,19 +55,19 @@
         <a class='menuItem' href="#home">Начало</a>
         <a class='menuItem' href="about.html">За нас</a>
         <a class='menuItem' href="#service" id='dropdown'>Услуги
-          <div class="dropdown-content">
-            <a class='menuItem' href="#">Погребение</a>
-            <a class='menuItem' href="#">Паметници</a>
-            <a class='menuItem' href="#">Кремация</a>
-            <a class='menuItem' href="#">Панихида</a>
-            <a class='menuItem' href="#">Хладилна камера</a>
-            <a class='menuItem' href="#">Транспорт</a>
-            <a class='menuItem' href="#">Траурни стоки</a>        
-          </div>
         </a>
         <a href="#contact">Контакти</a>
       </div>
 
+    </div>
+    <div class="dropdown-content">
+      <a class='menuItem' href="#">Погребение</a>
+      <a class='menuItem' href="#">Паметници</a>
+      <a class='menuItem' href="#">Кремация</a>
+      <a class='menuItem' href="#">Панихида</a>
+      <a class='menuItem' href="#">Хладилна камера</a>
+      <a class='menuItem' href="#">Транспорт</a>
+      <a class='menuItem' href="#">Траурни стоки</a>        
     </div>
     <div id="home">
       <h4>Свържете се с нас денонощно:</h4>
@@ -250,7 +250,7 @@
     document.querySelector("#dropdown").addEventListener('mouseout', () => document.querySelector(".dropdown-content").style.display = 'none')
     document.querySelector(".dropdown-content").addEventListener('mouseout', () => document.querySelector(".dropdown-content").style.display = 'none')
     let links = [...document.getElementsByTagName('a')]
-    links.forEach(link => link.addEventListener('ontouchend', () => link.removeClass('hover')))
+    // links.forEach(link => link.addEventListener('ontouchend', () => link.removeClass('hover')))
   </script>
 </html>
 
