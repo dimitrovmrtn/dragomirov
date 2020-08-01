@@ -20,7 +20,9 @@
   <body>
     <div id="navbar">
       <div class="logo">
-        <a href="#home"><img src="./images/nobg.png" alt="" /></a>
+        <a class="menuItem" href="index.html#home">
+          <img src="./images/nobg.png" alt="" />
+        </a>
       </div>
       <div class="menu-wrap">
         <input type="checkbox" class="toggler" />
@@ -32,28 +34,50 @@
             <div>
               <ul>
                 <li>
-                  <a class="sideMenuItem" href="index.html#home">Начало</a>
+                  <a class="sideMenuItem menuItem" href="index.html#home">
+                    Начало
+                  </a>
                 </li>
-                <li><a class="sideMenuItem" href="#about">За нас</a></li>
                 <li>
-                  <a class="sideMenuItem" href="index.html#service">Услуги</a>
+                  <a class="sideMenuItem menuItem" href="index.html#about">
+                    За нас
+                  </a>
                 </li>
-                <li><a class="sideMenuItem" href="index.html">Контакти</a></li>
+                <li>
+                  <a class="sideMenuItem menuItem" href="index.html#service">
+                    Услуги
+                  </a>
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </li>
+                <li>
+                  <a class="sideMenuItem menuItem" href="index.html#contact">
+                    Контакти
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
       <div class="flex">
-        <a href="index.html#home">Начало</a>
-        <a href="index.html#about">За нас</a>
-        <a href="index.html#service">Услуги</a>
+        <a class="menuItem" href="index.html#home">Начало</a>
+        <a class="menuItem" href="about.html">За нас</a>
+        <a class="menuItem" href="index.html#service" id="dropdown">Услуги</a>
         <a href="index.html#contact">Контакти</a>
       </div>
     </div>
-
+    <div class="dropdown-content">
+      <a class="menuItem" href="#">Погребение</a>
+      <a class="menuItem" href="#">Паметници</a>
+      <a class="menuItem" href="#">Кремация</a>
+      <a class="menuItem" href="#">Панихида</a>
+      <a class="menuItem" href="#">Хладилна камера</a>
+      <a class="menuItem" href="#">Транспорт</a>
+      <a class="menuItem" href="#">Траурни стоки</a>
+    </div>
     <div id="about" class="single">
-      <div class="info">
+      <div class="info odd">
         <img src="./images/about.jpg" alt="" />
         <p>
           Ние, Диляна и Драгомир Драгомирови, като управляващи семейната траурна
@@ -64,19 +88,93 @@
           последния му земен път.
         </p>
       </div>
-      <div class="info">
-        <p class="text-center">
+      <div class="info even">
+        <img src="./images/slujiteli.jpg" alt="" />
+        <p>
           Разбираме добре болката, която причинява загубата на близък човек и
           отговорността, която носи нашата професия, затова високо ценим
-          професионализма и човечността на нашите служители.Работим денонощно в
-          4 офиса в гр. Варна, с. Тополи и гр. Аксаково. Разполагаме със
-          собствена база с хладилна камера, зала за поклонение, специализиран
-          транспорт за страната и чужбина, линейка за транспортиране на тежко
-          болни и трудноподвижни хора. За нашите клиенти функционира
-          каменоделски работилница за изработка на надгробни паметници, изделия
-          от мрамор и гранит и бригада за тяхното монтиране.
+          професионализма и човечността на нашите служители.
         </p>
+      </div>
+      <div class="info odd">
+        <img src="./images/slujiteli2.jpg" alt="" />
+        <p>
+          Работим денонощно в 4 офиса в гр. Варна, с. Тополи и гр. Аксаково.
+          Разполагаме със собствена база с хладилна камера, зала за бдение,
+          специализиран транспорт за страната и чужбина, линейка за
+          транспортиране на тежко болни и трудноподвижни хора.
+        </p>
+      </div>
+      <div class="info even">
+        <img src="./images/kamenodelnica.jpg" alt="" />
+        <p>
+          За нашите клиенти функционира каменоделска работилница за изработка на
+          надгробни паметници, изделия от мрамор и гранит и бригада за тяхното
+          монтиране.
+        </p>
+      </div>
+      <div class="galeriq">
+        <h4 class="title">Нашите служители</h4>
+        <div class="images">
+          <img src="images/slujitel1.jpg" class="short" alt="" />
+          <img src="images/slujitel2.jpg" class="long" alt="" />
+          <img src="images/slujitel3.jpeg" class="short" alt="" />
+        </div>
       </div>
     </div>
   </body>
+  <script>
+    [...document.getElementsByClassName("sideMenuItem")].forEach((item) =>
+      item.addEventListener("click", () =>
+        document.querySelector(".toggler").click()
+      )
+    );
+    document
+      .querySelector(".toggler")
+      .addEventListener("click", () =>
+        document
+          .querySelector(".dropdown-content")
+          .classList.remove("mobileDropDown")
+      );
+    document.querySelector(".dropdown-content").firstChild.remove();
+    document.querySelector("#dropdown").addEventListener("mouseover", () => {
+      document.querySelector(".dropdown-content").style.display = "block";
+      document.querySelector(".dropdown-content").style.top = `${
+        145 + window.pageYOffset
+      }px`;
+    });
+
+    document.querySelector(".fa-angle-down").addEventListener("click", () => {
+      document
+        .querySelector(".dropdown-content")
+        .classList.toggle("mobileDropDown");
+      document.querySelector("html").classList.toggle("hidden");
+      document.querySelector(".dropdown-content").style.top = `${
+        550 + window.pageYOffset
+      }px`;
+    });
+    document
+      .querySelector(".dropdown-content")
+      .addEventListener(
+        "mouseover",
+        () =>
+          (document.querySelector(".dropdown-content").style.display = "block")
+      );
+    document
+      .querySelector("#dropdown")
+      .addEventListener(
+        "mouseout",
+        () =>
+          (document.querySelector(".dropdown-content").style.display = "none")
+      );
+    document
+      .querySelector(".dropdown-content")
+      .addEventListener(
+        "mouseout",
+        () =>
+          (document.querySelector(".dropdown-content").style.display = "none")
+      );
+    let links = [...document.getElementsByTagName("a")];
+    // links.forEach(link => link.addEventListener('ontouchend', () => link.removeClass('hover')))
+  </script>
 </html>

@@ -120,39 +120,6 @@ h1.title {
     // padding: 20px;
     font-size: 30px;
   }
-  // #dropdown {
-  //   position: relative;
-  // }
-  // .dropdown-content {
-  //   &.mobileDropDown {
-  //     display: block;
-  //     top: 55vh;
-  //     right: 28vw;
-  //   }
-  //   // display: none;
-  //   position: absolute;
-  //   background-color: #f1f1f1;
-  //   right: 33vw;
-  //   top: 14vh;
-  //   min-width: 160px;
-  //   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  //   z-index: 1;
-  //   a {
-  //     font-size: 14px;
-  //     &:hover {
-  //       transform: none;
-  //     }
-  //   }
-  // }
-  // .dropdown-content a {
-  //   color: black;
-  //   padding: 12px 16px;
-  //   text-decoration: none;
-  //   display: block;
-  // }
-  // .dropdown-content a:hover {
-  //   background-color: rgb(187, 187, 187);
-  // }
 
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;
@@ -230,8 +197,32 @@ h1.title {
   &.single {
     // margin-top: 120px;
     padding-top: 21vh;
+    .info {
+      width: 90vw;
+      &.even {
+        flex-direction: row-reverse;
+        p {
+          text-align: left;
+        }
+      }
+      &.odd {
+        p {
+          text-align: right;
+        }
+      }
+    }
+    .images {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img.short {
+        width: 20%;
+      }
+      img.long {
+        width: 40%;
+      }
+    }
   }
-
   .info {
     display: flex;
     align-items: center;
@@ -254,6 +245,12 @@ h1.title {
       padding-left: 20px;
       vertical-align: middle;
     }
+  }
+  .title {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
   }
 }
 
@@ -609,15 +606,23 @@ footer {
       width: 90vw;
     }
     .info {
-      flex-direction: column;
+      flex-direction: column !important;
       img {
         width: 300px;
       }
       p {
-        text-align: center;
+        text-align: center !important;
         margin-top: 30px;
         font-size: 20px;
         padding: 0;
+      }
+    }
+    &.single {
+      p {
+        font-size: 20px;
+      }
+      .galeriq {
+        display: none;
       }
     }
   }
@@ -651,6 +656,10 @@ footer {
       flex-direction: column;
     }
   }
+}
+
+#servicePage {
+  padding-top: 20vh;
 }
 
 @media (max-width: 599px) {
