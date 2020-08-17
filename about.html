@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
     <title>Dragomirov</title>
   </head>
   <body>
@@ -113,6 +117,25 @@
           монтиране.
         </p>
       </div>
+      <!-- <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide" style="width: 30vw;">
+              <img src="images/slujitel1-min.jpg" style="width: 30vw;" alt="" />
+            </li>
+            <li class="splide__slide" style="width: 30vw;">
+              <img src="images/slujitel2-min.jpg" style="width: 30vw;" alt="" />
+            </li>
+            <li class="splide__slide" style="width: 30vw;">
+              <img
+                src="images/slujitel3-min.jpeg"
+                style="width: 30vw;"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+      </div> -->
       <div class="galeriq">
         <h4 class="title">Нашите служители</h4>
         <div class="images">
@@ -124,4 +147,14 @@
     </div>
   </body>
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Splide(".splide", {
+        type: "loop",
+        perPage: 1,
+        focus: "center",
+      }).mount();
+    });
+  </script>
 </html>

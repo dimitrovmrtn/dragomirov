@@ -100,6 +100,7 @@ h1.title {
 
 #navbar {
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -343,8 +344,6 @@ h1.title {
 #service {
   margin-bottom: 50px;
   padding-top: 50px;
-  /* On mouse-over, add a deeper shadow */
-  /* Add some padding inside the card container */
 }
 
 #service h1.title {
@@ -382,12 +381,43 @@ h1.title {
   font-size: 1.2rem;
 }
 
-#service .card:hover {
+#servicePage {
+  padding-top: 20vh;
+  /* On mouse-over, add a deeper shadow */
+  /* Add some padding inside the card container */
+}
+
+#servicePage .title {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+#servicePage p {
+  text-align: center;
+  color: white;
+  width: 80vw;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+#servicePage .slideshow {
+  padding: 0 25%;
+}
+
+#servicePage .slideshow img {
+  padding: 50px;
+}
+
+#servicePage .card:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-#service .container {
+#servicePage .container {
   padding: 2px 16px;
 }
 
@@ -768,6 +798,12 @@ footer i.fa-google:hover {
   #service .cards .card img {
     width: 85vw;
   }
+  #servicePage {
+    padding-top: 12%;
+  }
+  #servicePage .slideshow {
+    padding: 0 10%;
+  }
   #contact iframe,
   #contact #lol {
     width: 80vw;
@@ -783,10 +819,6 @@ footer i.fa-google:hover {
   #contact .contact-content textarea {
     width: 80vw;
   }
-}
-
-#servicePage {
-  padding-top: 20vh;
 }
 
 @media (max-width: 599px) {
@@ -807,6 +839,15 @@ footer i.fa-google:hover {
   }
   #home div a.phone {
     font-size: 30px;
+  }
+  #servicePage {
+    padding-top: 12%;
+  }
+  #servicePage p {
+    font-size: 15px;
+  }
+  #servicePage .slideshow {
+    padding: 0 3%;
   }
 }
 

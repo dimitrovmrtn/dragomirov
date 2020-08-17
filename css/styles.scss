@@ -78,6 +78,7 @@ h1.title {
 }
 #navbar {
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -300,6 +301,34 @@ h1.title {
         font-size: 1.2rem;
       }
     }
+  }
+}
+#servicePage {
+  padding-top: 20vh;
+  .title {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  p {
+    text-align: center;
+    color: white;
+    width: 80vw;
+    margin: 0 auto;
+    font-size: 22px;
+    // margin-bottom: 40px;
+  }
+  .slideshow {
+    padding: 0 25%;
+    img {
+      padding: 50px;
+    }
+    // img {
+    //   width: 40% !important;
+    // }
   }
 
   /* On mouse-over, add a deeper shadow */
@@ -642,6 +671,12 @@ footer {
       }
     }
   }
+  #servicePage {
+    padding-top: 12%;
+    .slideshow {
+      padding: 0 10%;
+    }
+  }
   #contact {
     iframe,
     #lol {
@@ -656,10 +691,6 @@ footer {
       flex-direction: column;
     }
   }
-}
-
-#servicePage {
-  padding-top: 20vh;
 }
 
 @media (max-width: 599px) {
@@ -689,6 +720,15 @@ footer {
       // transform: scale(1.2);
 
       font-size: 30px;
+    }
+  }
+  #servicePage {
+    padding-top: 12%;
+    p {
+      font-size: 15px;
+    }
+    .slideshow {
+      padding: 0 3%;
     }
   }
 }
