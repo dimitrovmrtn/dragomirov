@@ -387,6 +387,10 @@ h1.title {
   /* Add some padding inside the card container */
 }
 
+#servicePage .see-more {
+  margin: 20px 0;
+}
+
 #servicePage .title {
   text-align: center;
   color: white;
