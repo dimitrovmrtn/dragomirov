@@ -283,6 +283,10 @@ h1.title {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 70px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
     .card {
       /* Add shadows to create the "card" effect */
       // box-shadow: 4px 4px 8px 0 rgba(255, 255, 255, 0.3);
@@ -292,6 +296,9 @@ h1.title {
       color: white;
       height: 28vh;
       cursor: pointer;
+      &:hover {
+        transform: scale(1.15);
+      }
       img {
         width: 25vw;
         height: 24vh;
@@ -670,7 +677,7 @@ footer {
       }
       .card,
       .card img {
-        width: 85vw;
+        width: 65vw;
       }
     }
   }

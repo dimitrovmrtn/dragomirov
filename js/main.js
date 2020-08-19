@@ -1,4 +1,3 @@
-document.getElementById("form").onsubmit = () => window.alert("heeeeeey");
 [...document.getElementsByClassName("sideMenuItem")].forEach((item) =>
   item.addEventListener("click", () =>
     document.querySelector(".toggler").click()

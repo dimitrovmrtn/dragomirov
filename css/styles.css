@@ -360,6 +360,11 @@ h1.title {
   margin-bottom: 70px;
 }
 
+#service .cards a {
+  text-decoration: none;
+  color: white;
+}
+
 #service .cards .card {
   /* Add shadows to create the "card" effect */
   -webkit-transition: 0.3s;
@@ -369,6 +374,11 @@ h1.title {
   color: white;
   height: 28vh;
   cursor: pointer;
+}
+
+#service .cards .card:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 #service .cards .card img {
@@ -800,7 +810,7 @@ footer i.fa-google:hover {
   }
   #service .cards .card,
   #service .cards .card img {
-    width: 85vw;
+    width: 65vw;
   }
   #servicePage {
     padding-top: 12%;
