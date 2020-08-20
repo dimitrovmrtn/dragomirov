@@ -317,8 +317,8 @@ h1.title {
 #about .title {
   text-align: center;
   color: white;
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .see-more {
