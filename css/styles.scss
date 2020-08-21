@@ -273,6 +273,9 @@ h1.title {
   }
 }
 
+#venci {
+  padding: 10px 137px;
+}
 #service {
   margin-bottom: 50px;
   padding-top: 100px;
@@ -456,12 +459,13 @@ footer {
   display: block;
   margin: 0 auto;
   margin-top: 10vh;
+  cursor: pointer;
 }
 .arrow-border {
   position: relative;
   width: 60px;
   height: 60px;
-  border: 2px solid orange;
+  border: 2px solid white;
   border-radius: 50%;
 }
 .arrow {
@@ -469,8 +473,8 @@ footer {
   bottom: 24px;
   width: 20px;
   height: 20px;
-  border-top: 3px solid orange;
-  border-right: 3px solid orange;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
   right: 19px;
 }
 
@@ -686,6 +690,10 @@ footer {
   }
   .see-more a {
     padding: 15px 20px;
+    font-size: 15px;
+  }
+  #venci {
+    padding: 10px 94px;
   }
   h1.title {
     font-size: 40px;
@@ -700,6 +708,7 @@ footer {
       display: none;
     }
   }
+
   #home {
     padding-top: 22vh;
     #facebook,
@@ -732,6 +741,7 @@ footer {
       }
     }
   }
+
   #service {
     h1.title {
       margin-bottom: 20px;
@@ -747,6 +757,9 @@ footer {
         width: 65vw;
       }
     }
+  }
+  #pogrebenie {
+    padding-top: 10vh;
   }
   #servicePage {
     padding-top: 12%;
@@ -824,6 +837,18 @@ footer {
   #contact {
     .phones {
       flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 399px) {
+  #servicePage {
+    .see-more a {
+      padding: 15px 5px;
+      font-size: 12px;
+    }
+    #venci {
+      padding: 15px 64px;
     }
   }
 }
