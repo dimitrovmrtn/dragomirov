@@ -244,6 +244,7 @@ h1.title {
 
 #about.single .info {
   width: 90vw;
+  padding-top: 5vh;
 }
 
 #about.single .info.even {
@@ -426,7 +427,11 @@ h1.title {
 }
 
 #servicePage .service {
-  padding-top: 11vh;
+  padding-top: 10vh;
+}
+
+#servicePage .service#pogrebenie {
+  padding-top: 18vh;
 }
 
 #servicePage .card:hover {
@@ -565,7 +570,7 @@ footer i.fa-google:hover {
   height: 60px;
   display: block;
   margin: 0 auto;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 .arrow-border {

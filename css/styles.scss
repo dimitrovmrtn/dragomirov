@@ -200,6 +200,7 @@ h1.title {
     padding-top: 21vh;
     .info {
       width: 90vw;
+      padding-top: 5vh;
       &.even {
         flex-direction: row-reverse;
         p {
@@ -341,7 +342,10 @@ h1.title {
   }
 
   .service {
-    padding-top: 11vh;
+    padding-top: 10vh;
+    &#pogrebenie {
+      padding-top: 18vh;
+    }
   }
 
   /* On mouse-over, add a deeper shadow */
@@ -451,7 +455,7 @@ footer {
   height: 60px;
   display: block;
   margin: 0 auto;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 .arrow-border {
   position: relative;
