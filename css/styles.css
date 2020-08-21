@@ -371,7 +371,6 @@ h1.title {
 }
 
 #service .cards .card {
-  /* Add shadows to create the "card" effect */
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 25vw;

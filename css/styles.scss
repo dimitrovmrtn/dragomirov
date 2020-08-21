@@ -49,7 +49,6 @@ h1.title {
 .dropdown-content {
   &.mobileDropDown {
     display: block !important;
-    // top: 55vh !important;
     right: 28vw;
   }
   display: none;
@@ -118,7 +117,6 @@ h1.title {
         display: block;
       }
     }
-    // padding: 20px;
     font-size: 30px;
   }
 
@@ -146,7 +144,6 @@ h1.title {
     transition: 0.5s;
     &:hover {
       font-size: 60px;
-      // transform: scale(1.2);
     }
   }
   #social {
@@ -196,7 +193,6 @@ h1.title {
   background-size: cover;
 
   &.single {
-    // margin-top: 120px;
     padding-top: 21vh;
     .info {
       width: 90vw;
@@ -292,8 +288,6 @@ h1.title {
       color: white;
     }
     .card {
-      /* Add shadows to create the "card" effect */
-      // box-shadow: 4px 4px 8px 0 rgba(255, 255, 255, 0.3);
       transition: 0.3s;
       width: 25vw;
       border-radius: 5px;
@@ -332,16 +326,12 @@ h1.title {
     width: 80vw;
     margin: 0 auto;
     font-size: 22px;
-    // margin-bottom: 40px;
   }
   .slideshow {
     padding: 0 25%;
     img {
       padding: 50px;
     }
-    // img {
-    //   width: 40% !important;
-    // }
   }
 
   .service {
@@ -370,8 +360,7 @@ h1.title {
     align-items: center;
     #addresses {
       margin-top: 0 20px;
-      // display: flex;
-      // justify-content: space-between;
+
       color: white;
     }
     label {
@@ -418,7 +407,6 @@ h1.title {
 }
 
 footer {
-  // background-color: blue;
   height: 50px;
   margin-top: 50px;
   display: flex;
@@ -544,7 +532,6 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  // background: #111;
 }
 
 .hamburger > div {
@@ -611,7 +598,6 @@ footer {
   transform: translateX(-150%) translateY(-50%);
   width: 100vw;
   height: 100vh;
-  // border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
@@ -686,7 +672,6 @@ footer {
 @media (max-width: 799px) {
   a.phone:hover {
     font-size: 40px !important;
-    // transform: scale(1.2);
   }
   .see-more a {
     padding: 15px 20px;
@@ -792,7 +777,6 @@ footer {
   #home {
     div a.phone {
       font-size: 50px;
-      // transform: scale(1.2);
     }
   }
 }
@@ -807,8 +791,6 @@ footer {
   }
   #home {
     div a.phone {
-      // transform: scale(1.2);
-
       font-size: 30px;
     }
   }
