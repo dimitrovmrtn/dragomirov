@@ -25,12 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.querySelector(".fa-angle-down").addEventListener("click", () => {
-    document
-      .querySelector(".dropdown-content")
-      .classList.toggle("mobileDropDown");
-    document.querySelector(
-      ".dropdown-content"
-    ).style.top = `calc(55vh + ${window.pageYOffset}px)`;
+    // document
+    //   .querySelector(".dropdown-content")
+    //   .classList.toggle("mobileDropDown");
+    // document.querySelector(
+    //   ".dropdown-content"
+    // ).style.top = `calc(55vh + ${window.pageYOffset}px)`;
+    document.querySelector(".collapsed-content").classList.toggle("show");
   });
   document
     .querySelector(".dropdown-content")
