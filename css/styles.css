@@ -524,7 +524,7 @@ h1.title {
 
 footer {
   height: 50px;
-  margin-top: 50px;
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,18 +569,80 @@ footer i.fa-google:hover {
   color: white;
 }
 
-.collapsed-content {
+#faq {
+  width: 89vw;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+#faq .collapsible-question {
+  padding: 8px 0;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  margin: 16px auto;
+  width: 50%;
+  text-align: center;
+  background-color: #252525;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+#faq .collapsible-question:hover {
+  font-weight: 700;
+}
+
+#faq .collapsed-answer {
+  font-weight: 100;
+  padding-top: 5px;
+  color: #d8d7d7;
+}
+
+#faq i {
+  display: none;
+}
+
+#pre-footer h1 {
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+
+#pre-footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pre-footer .links a {
+  color: white;
+  width: 20%;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.collapsed-content,
+.collapsed-answer {
   display: none;
   color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.collapsed-content.show {
+.collapsed-content.show,
+.collapsed-answer.show {
   display: block;
 }
 
-.collapsed-content a {
+.collapsed-content a,
+.collapsed-answer a {
   display: block;
   margin: 10px;
   font-size: 17px !important;
@@ -610,7 +672,7 @@ footer i.fa-google:hover {
   height: 20px;
   border-top: 3px solid white;
   border-right: 3px solid white;
-  right: 19px;
+  right: 18px;
 }
 
 .down {

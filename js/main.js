@@ -4,11 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(".toggler").click()
     )
   );
-  // [...document.getElementsByClassName("menuItem")].forEach((item) =>
-  //   item.addEventListener("click", () =>
-  //     document.querySelector(".toggler").click()
-  //   )
-  // );
   document
     .querySelector(".toggler")
     .addEventListener("click", () =>
@@ -25,14 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.querySelector(".fa-angle-down").addEventListener("click", () => {
-    // document
-    //   .querySelector(".dropdown-content")
-    //   .classList.toggle("mobileDropDown");
-    // document.querySelector(
-    //   ".dropdown-content"
-    // ).style.top = `calc(55vh + ${window.pageYOffset}px)`;
     document.querySelector(".collapsed-content").classList.toggle("show");
   });
+
+  document.querySelectorAll(".collapsible-question").forEach((el, index) => {
+    el.addEventListener("click", () => {
+      document.querySelector(`#answer-${index}`).classList.toggle("show");
+    });
+  });
+
   document
     .querySelector(".dropdown-content")
     .addEventListener(
@@ -53,5 +49,4 @@ document.addEventListener("DOMContentLoaded", function () {
       () => (document.querySelector(".dropdown-content").style.display = "none")
     );
   let links = [...document.getElementsByTagName("a")];
-  // links.forEach(link => link.addEventListener('ontouchend', () => link.removeClass('hover')))
 });

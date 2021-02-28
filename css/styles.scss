@@ -409,7 +409,7 @@ h1.title {
 
 footer {
   height: 50px;
-  margin-top: 50px;
+  margin-top: 15px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -441,7 +441,59 @@ footer {
   }
 }
 
-.collapsed-content {
+#faq {
+  width: 89vw;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  .collapsible-question {
+    padding: 8px 0;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    margin: 16px auto;
+    width: 50%;
+    text-align: center;
+    background-color: #252525;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    &:hover {
+      font-weight: 700;
+    }
+  }
+  .collapsed-answer {
+    font-weight: 100;
+    padding-top: 5px;
+    color: rgb(216, 215, 215);
+  }
+  i {
+    display: none;
+  }
+}
+
+#pre-footer {
+  h1 {
+    text-align: center;
+    color: white;
+    margin: 20px;
+  }
+  .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+      color: white;
+      width: 20%;
+      font-size: 14px;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
+
+.collapsed-content,
+.collapsed-answer {
   display: none;
   color: white;
   transition: 0.5s;
@@ -478,7 +530,7 @@ footer {
   height: 20px;
   border-top: 3px solid white;
   border-right: 3px solid white;
-  right: 19px;
+  right: 18px;
 }
 
 .down {
