@@ -7,6 +7,7 @@
     <meta name='description' content="Траурна агенция Драгомиров предлага цялостно организиране на погребения и кремации, изработка на паметници и специализиран транспорт"/>
     <meta name="keywords" content="траурна агенция, погребения, погребална агенция, погребение, кремация, ковчези, венци, паметници, цени" />
 
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -17,14 +18,18 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
     <title>Dragomirov</title>
   </head>
   <body>
-    <h1 style="display: none"> Траурна Агенция Драгомиров Варна </h1>
     <div id="navbar">
       <div class="logo">
-        <a class="menuItem" href="#home"><img loading="lazy" src="./images/nobg.png" alt="" /></a>
+        <a class="menuItem" href="../index.html#home">
+          <img src="../images/nobg.png" alt="" />
+        </a>
       </div>
       <div class="menu-wrap">
         <input type="checkbox" class="toggler" />
@@ -35,19 +40,28 @@
           <div>
             <div>
               <ul>
-                <li><a class="sideMenuItem menuItem" href="#home">Начало</a></li>
-                <li><a class="sideMenuItem menuItem" href="about.html">За нас</a></li>
-                <li><a id='collapsible' class="sideMenuItem menuItem" href="service.html">Услуги</a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                <li>
+                  <a class="sideMenuItem menuItem" href="../index.html#home">
+                    Начало
+                  </a>
+                </li>
+                <li>
+                  <a class="sideMenuItem menuItem" href="../about.html">За нас</a>
+                </li>
+                <li><a id='collapsible' class="sideMenuItem menuItem" href="/service.html">Услуги</a><i class="fa fa-angle-down" aria-hidden="true"></i>
                   <div class="collapsed-content">
-                    <a class='collapsed-item' href="./services/pogrebenie.html">Погребение</a>
-                    <a class='collapsed-item' href="./services/pametnici.html">Паметници</a>
-                    <a class='collapsed-item' href="./services/kremaciq.html">Кремация</a>
-                    <a class='collapsed-item' href="./services/panihida.html">Панихида</a>
-                    <a class='collapsed-item' href="./services/transport">Транспорт</a>
-                    <a class='collapsed-item' href="./services/traurni-stoki.html">Траурни стоки</a>    
+                    <a class='collapsed-item' href="./pogrebenie.html">Погребение</a>
+                    <a class='collapsed-item' href="./pametnici.html">Паметници</a>
+                    <a class='collapsed-item' href="./kremaciq.html">Кремация</a>
+                    <a class='collapsed-item' href="./panihida.html">Панихида</a>
+                    <a class='collapsed-item' href="./transport">Транспорт</a>
+                    <a class='collapsed-item' href="./traurni-stoki.html">Траурни стоки</a>    
                   </div>
                 </li>
-                <li><a class="sideMenuItem menuItem" href="#contact">Контакти</a></li>
+                  <a class="sideMenuItem menuItem" href="../index.html#contact">
+                    Контакти
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -55,114 +69,98 @@
       </div>
 
       <div class="flex">
-        <a class='menuItem' href="#home">Начало</a>
-        <a class='menuItem' href="about.html">За нас</a>
-        <a class='menuItem' href="service.html" id='dropdown'>Услуги
-        </a>
-        <a href="#contact">Контакти</a>
+        <a class="menuItem" href="../index.html#home">Начало</a>
+        <a class="menuItem" href="../about.html">За нас</a>
+        <a class="menuItem" href="/service.html" id="dropdown">Услуги</a>
+        <a href="../index.html#contact">Контакти</a>
       </div>
-
     </div>
     <div class="dropdown-content">
-      <a class='menuItem' href="./services/pogrebenie.html">Погребение</a>
-      <a class='menuItem' href="./services/pametnici.html">Паметници</a>
-      <a class='menuItem' href="./services/kremaciq.html">Кремация</a>
-      <a class='menuItem' href="./services/panihida.html">Панихида</a>
-      <a class='menuItem' href="./services/transport">Транспорт</a>
-      <a class='menuItem' href="./services/traurni-stoki.html">Траурни стоки</a>        
+      <a class="sideMenuItem" href="./pogrebenie.html">Погребение</a>
+      <a class="sideMenuItem" href="./pametnici.html">Паметници</a>
+      <a class="sideMenuItem" href="./kremaciq.html">Кремация</a>
+      <a class="sideMenuItem" href="./panihida.html">Панихида</a>
+      <a class="sideMenuItem" href="./transport.html">Транспорт</a>
+      <a class="sideMenuItem" href="./traurni-stoki.html">Траурни стоки</a>
     </div>
-    <div id="home">
-      <h2>Ние разбираме добре, че вероятно сте съкрушени и объркани. Затова е добре да се свържете директно с нас, за да можем да отговорим на всичките Ви въпроси, свързани с погребението или кремацията, издаването на документи или други подробности. На Ваше разположение сме денонощно.</h2>
-      <h3>Свържете се с нас:</h3>
-      <div>
-        <a rel="noopener" class="phone" href="tel:0035952658521">
-          <i class="fas fa-phone"></i>
-          052 658 521
-        </a>
-      </div>
-      <div>
-        <a rel="noopener" class="phone" href="tel:00359889549857">
-          <i class="fas fa-phone"></i>
-          0889 549 857
-        </a>
-      </div>
-      <br />
-      <h3>или ни пишете:</h3>
-      <div id="social">
-        <a rel="noopener"
-          target="_blank"
-          href="https://api.whatsapp.com/send?phone=359889549857&text=&source=&data=&app_absent="
-          id="whatsapp"
-        >
-          <i class="fab fa-whatsapp" aria-hidden="true"></i>
-          Whatsapp
-        </a>
-        <a rel="noopener"
-          target="_blank"
-          href="https://www.messenger.com/t/DRAGOMIROVfuneral"
-          id="facebook"
-        >
-          <i class="fab fa-facebook-messenger" aria-hidden="true"></i>
-          Messenger
-        </a>
-      </div>
-      
-      <div id="arrow-wrapper">
-        <a href="#about">
-          <div class="arrow-border">
-            <div class="arrow down"></div>
-            <div class='pulse'></div>
-          </div>
-        </a>
-        </div>
-    </div>
-    <div id="about">
-      <h2 class="title">За нас</h2>
-      <div class="info">
-        <img loading="lazy" src="./images/about-min.jpg" alt="" />
+    <div id="servicePage" class="single">
+      <div class="service" id="pogrebenie">
+        <h4 class="title">Погребение</h4>
         <p>
-          Ние, Диляна и Драгомир Драгомирови, като управляващи семейната траурна
-          агенция ”Драгомиров” Ви предлагаме своя дългогодишен опит в цялостното
-          организиране на погребения, кремации и панихиди.
+          Всички погребения са различни и могат да варират значително в цената.
+          Ние от Траурна Агенция Драгомиров сме готови да обсъдим с Вас всички
+          възможности по открит и честен начин и да се съобразим с бюджета, с
+          който разполагате Ние ще осигурим издаването на всички необходими
+          документи и ще се погрижим за подготовката на Вашия починал близък.
+          Оказваме съдействие при избор на гробно място, гробищен парк, ритуал и
+          всички подробности по погребението. Агенцията разполага с лекар, който
+          да напише съобщение за смърт (важно условие за организиране на
+          погребението).
+          Поради дългогодишния си опит в траурния и погребалния бранш научихме, 
+          че в моменти на загуба човек често не е на себе си и има нужда от 
+          специално отношение и внимание. Разбираме добре, че вероятно сте объркани
+          и съкрушени, затова винаги подхождаме с професионализъм и коректност при 
+          организирането на едно погребение. 
+          <br>
+          <br>
+          Необходими документи за организиране на погребение: 
+          <br>
+          1.Съобщение за смърт
+          <br>
+          2.Лична карта на починалия
+          <br>
+          <br>
+          Погребение на старо /наследствено/ гробно място:
         </p>
-      </div>
-      <div class="see-more">
-        <a href="about.html" id="see-more">Виж още</a>
-      </div>
-    </div>
-    <div id="service">
-      <h2 class="title">Услуги</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="container">
-            <a href="service.html#pogrebenie">
+        <p>1. Съобщение за смърт</p>
+        <p>2. Лична карта на починалия</p>
+        <p>3. Квитанция за платено гробно място</p>
+        <p>4. Удостоверение за наследници </p>
+        <p>5. Ако сега покойникът не е пряк роднина, <br> попълват се декларации от всички наследници, че са <br> съгласни да се извърши погребението в наследствено гробно място.</p>
 
-              <h4><b>Погребение</b></h4>
-            </div>
-            <img loading="lazy" src="./images/pogrebenie-min.jpg" alt="Avatar">
-          </a>
-        </div>
-        <div class="card">
-          <div class="container">
-            <a href="service.html#pametnici">
-            <h4><b>Паметници</b></h4>
-            </div>
-            <img loading="lazy" src="./images/pametnik-min.jpg" alt="Avatar">
-            </a>
-        </div>
-        <div class="card">
-          <div class="container">
-            <a href="service.html#kremaciq">
 
-              <h4><b>Кремация</b></h4>
+
+
+
+        <div class="slideshow">
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <img
+                  class="splide__slide"
+                  loading="lazy"
+                  src="../images/pogrebenie2-min.jpg"
+                />
+                <img
+                  class="splide__slide"
+                  loading="lazy"
+                  src="../images/pogrebenie3-min.JPG"
+                />
+                <img
+                  class="splide__slide"
+                  loading="lazy"
+                  src="../images/pogrebenie4-min.jpg"
+                />
+                <img
+                  class="splide__slide"
+                  loading="lazy"
+                  src="../images/pogrebenie6-min.JPG"
+                />
+                <img
+                  class="splide__slide"
+                  loading="lazy"
+                  src="../images/pogrebenie7-min.jpg"
+                />
+                <img
+                  class="splide__slide"
+                  loading="lazy"
+                  src="../images/pogrebenie8-min.jpg"
+                />
+              </ul>
             </div>
-            <img loading="lazy" src="./images/cremaciq-min.jpg" alt="Avatar">
-          </a>
-        </div>
-      </div>
-          <div class="see-more">
-            <a href="service.html" class="see-more">Виж всички</a>
           </div>
+        </div>
+      </div>
     </div>
     <div id="faq">
       <h2 class='title'>Често Задавани Въпроси</h2>
@@ -303,7 +301,7 @@
       </div>
     </div>
     <div id="contact">
-      <h2 class="title">Контакти</h2>
+      <h1 class="title">Контакти</h1>
       <div class="contact-content">
         <div id="lol">
           <div class="phones">
@@ -408,9 +406,18 @@
       Всички права запазени. 2020 &#169 Изработка от <a href="">Мартин Димитров</a>
     </div>
   </body>
-  <!-- <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script> -->
-  <script src="js/main.js"> </script>
-
+  <script src="../js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const elms = document.getElementsByClassName("splide");
+      for (let i = 0, len = elms.length; i < len; i++) {
+        new Splide(elms[i], {
+          type: "fade",
+          rewind: true,
+          lazyLoad: true,
+        }).mount();
+      }
+    });
+  </script>
 </html>
-
-
